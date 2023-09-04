@@ -1,28 +1,45 @@
-.sendBtn{
-    background-color:rgb(219, 219, 252);
-    border: 1px solid rgb(166, 148, 215);
-    padding: 10px;
-    border-radius: 5px;
-    color: rgb(70, 61, 104);
+.sendBtn {
+  background-color: rgb(219, 219, 252);
+  border: 1px solid rgb(166, 148, 215);
+  padding: 10px;
+  border-radius: 5px;
+  color: rgb(70, 61, 104);
 }
-.container{
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    align-items: center;
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  padding: 0 100px;
 }
 /* .leftContainer{
 
 } */
-.rightContainer{
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(162, 162, 241, 0.5), 0 0 20px rgba(162, 162, 241, 0.5), 0 0 30px rgba(162, 162, 241, 0.5);
-    padding: 20px;
-   min-width: 100px;
-   height: fit-content;
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(162, 162, 241, 0.5),
+    0 0 20px rgba(162, 162, 241, 0.5), 0 0 30px rgba(162, 162, 241, 0.5);
+  padding: 20px;
+  min-width: 100px;
+  height: fit-content;
 }
-.rightContainer h2{
-    color: rgb(162, 162, 241);
+.rightContainer h2 {
+  color: rgb(162, 162, 241);
+}
+@media screen and (max-width: 950px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .container {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 420px) {
+  .rightContainer {
+    font-size: small;
+  }
 }
